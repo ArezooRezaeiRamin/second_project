@@ -1,0 +1,18 @@
+$width100:100%;
+
+*{
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "iransans";
+}
+
+html,
+body{
+    width: $width100;
+}
+
+@font-face{
+    font-family: "iransans";
+    src: url('./assets/fonts/FontsFree-Net-ir_sans.ttf')format("truetype");
+}

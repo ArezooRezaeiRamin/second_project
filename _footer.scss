@@ -1,0 +1,29 @@
+$width100:100%;
+
+@mixin display {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer{
+    width: $width100;
+    height: auto;
+    margin: 30px;
+    @include display();
+    flex-wrap: wrap;
+}
+
+.footer ul li{
+    font-size: 12px;
+}
+
+.footer ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 60%;
+    list-style-type: none;
+}

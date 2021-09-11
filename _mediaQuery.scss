@@ -1,0 +1,46 @@
+$width100:100%;
+
+@media screen and (max-width:900px){
+    .header > img{
+        display: none;
+    }
+    .contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: $width100;
+        margin-top: 100px;
+        position: relative;
+    }
+    .div-title{
+        width: $width100;
+        min-height: 220px;
+        margin-top: 30px;
+    }
+    .div-form{
+        width: $width100;
+        min-height: 220px;
+    }
+    .weblog-title{
+        margin-top: 140px;
+    }
+    .title-btn{
+        position: absolute;
+        bottom: 130px;
+    }
+}
+
+@media screen and (max-width:475px){
+    .title, .title-btn, .form-btn, .remember, .tag-p{
+        font-size: 10px;
+    }
+    .div-title{
+        padding-bottom: 20px;
+    }
+}
+@media screen and (max-width:972px){
+    .footer{
+        display: none;
+    }
+}

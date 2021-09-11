@@ -1,0 +1,57 @@
+$backgroundColorForm:#F0F0F0;
+$borderColor:lightgray;
+$bgBtn:#4444FF;
+$white:white;
+
+@mixin placeholder {
+    font-size: 12px;
+    text-align: center;
+}
+
+@mixin marginTop($x) {
+    margin-top: $x;
+}
+
+.div-form{
+    width: 30%;
+    height: 220px;
+    background-color: $backgroundColorForm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input1{
+    width: 90%;
+    height: 35px;
+    border:1px solid $borderColor;
+    margin: 5px 0px;
+    @include marginTop(10px);
+}
+
+.input2{
+    width: 90%;
+    height: 35px;
+    border:1px solid $borderColor;
+    margin: 5px 0px;
+}
+
+.input1::placeholder{
+    @include placeholder();
+}
+
+.input2::placeholder{
+    @include placeholder();
+}
+
+.form-btn{
+    width: 90%;
+    height: 35px;
+    background-color: $bgBtn;
+    border: none;
+    outline: none;
+    color: $white;
+    font-size: 12px;
+    @include marginTop(5px);
+    cursor: pointer;
+}
